@@ -1,0 +1,185 @@
+/* ======== Default Style CSS ======== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1300px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+
+/* ======== Header Section CSS ======== */
+
+header{
+    background-color: #574b90;
+
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+}
+.menu ul li a{
+    display: block;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 12px;
+    left: 15px;
+    background-color: white;
+    transition: .5s;
+}
+.menu ul li a:hover::after{
+    width: 70%;
+    height: 5%;
+}
+
+/* ======== About Section CSS ======== */
+
+.about{
+    margin: 30px 0;
+}
+.about-content{
+    display: flex;
+}
+.content-left{
+    width: 400px;
+    background-color: #778ca3;
+    padding: 10px 0;
+}
+.content-left h2{
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+}
+.content-left p{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* ======== Content-Right Section CSS ======== */
+
+.content-right{
+    width: 900px;
+    margin: 30px 0;
+    margin-left: 20px;
+}
+
+/* ======== Row-1 Section CSS ======== */
+
+.row-1{
+    display: flex;
+    padding: 30px 0;
+}
+.row1-item{
+    border: 1px solid #1e3799;
+    margin-right: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    flex: 1 0 0%;
+}
+.row1-item h6{
+    width: 40px;
+    height: 25px;
+    color: white;
+    background-color: #079992;
+    border: 1px solid #1e3799;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row1-item1{
+    display: flex;
+    justify-content: space-around;
+}
+.row1-item2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row1-item3{
+    display: flex;
+    flex-direction: column;
+}
+.row1-item-2{
+    align-self: center;
+}
+.row1-item-3{
+    align-self: flex-end;
+}
+
+/* ======== Row-2 Section CSS ======== */
+
+.row-2{
+    display: flex;
+}
+.row2-item{
+    border: 1px solid #b71540;
+    margin-right: 20px;
+    margin-top: 30px;
+    flex: 1 0 0%;
+}
+.row2-item2{
+    flex-grow: 2;
+}
+.row2-item p{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ======== Row-3 Section CSS ======== */
+
+.row-3{
+    display: flex;
+    margin-top: 30px;
+}
+.row3-item{
+    height: 220px;
+    border: 1px solid #eb4d4b;
+    margin-right: 20px;
+    flex: 1 0 0%;
+}
+.row3-item h4{
+    width: 80px;
+    height: 50px;
+    color: white;
+    background-color: #6ab04c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row3-item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row3-item3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* ======== Footer Section CSS ======== */
+
+footer{
+    background-color: #a4b0be;
+    padding: 10px 0;
+    color: #273c75;
+    text-align: center;
+}
